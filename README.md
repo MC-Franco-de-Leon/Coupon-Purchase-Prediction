@@ -64,4 +64,4 @@ However, this error dramatically increased for a period of 80 days were we oberv
 * similarity (ipynb) executes three similarity recommenders based on three similarity metrics (jaccard, pearson, cosine)
 * popular (python) finds the top 10 active users, then displays the coupon preferences of the top three. Finds the most popular coupons, and the cities (small_area_name) with more coupon activity. v
 * couponsflow (python) counts the number of coupons used per day and saves (together with year, month, day information) it into a csv file
-* flowpred (R) predicts the activity of coupons usinf three models (vector autoregression, bayes autoregression and multilayer perceptron)
+* flowpred (R) predicts the activity of coupons using three models (vector autoregression, bayes autoregression and multilayer perceptron)
