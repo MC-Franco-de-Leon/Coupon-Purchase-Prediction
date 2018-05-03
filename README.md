@@ -24,7 +24,7 @@ This graph was obtained only considering the top 100 most popular coupons (in te
 
 **places with more activity**
 
-Here we can oberve the activity of coupons in terms of the feature 'small_area_name'
+Here we can oberve the activity of coupons in terms of the feature 'small_area_name', which make sense since more coupon activity correponds with the most crowded neighborhoods
 
 ![topplaces](https://user-images.githubusercontent.com/13289981/39567374-afdc9bb8-4e73-11e8-8b66-7b023b73e2f6.png)
 
