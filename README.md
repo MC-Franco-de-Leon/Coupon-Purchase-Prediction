@@ -18,7 +18,15 @@ https://www.kaggle.com/c/coupon-purchase-prediction
 
 **most popular coupons**
 
-This graph was obtained only considering the top 100 most popular coupons (in terms of being purchased). The top 3 are in the order of thousands (5760,1511,1016), the number fourth has 863 ocurrences and the count drops to 122 for the coupon in the position 99, and 93 for the position 150. There are a lot of coupons that were used only once during this period of time (about 8 months), and we need to analize(count) those coupons that were not used at all.  
+This graph was obtained only considering the top 100 most popular coupons (in terms of being purchased). The top 3 are in the order of thousands (5760,1511,1016), the number fourth has 863 ocurrences and the count drops to 122 for the coupon in the position 99, and 93 for the position 150. There are a lot (at least the last 150) of coupons that were used only once during this period of time (about 8 months), and we need to analize(count) those coupons that were not used at all.  
+
+![top100coupons](https://user-images.githubusercontent.com/13289981/39567372-ae58f2c8-4e73-11e8-987d-ee37b365f5b5.png)
+
+**places with more activity**
+
+Here we can oberve the activity of coupons in terms of the feature 'small_area_name'
+
+![topplaces](https://user-images.githubusercontent.com/13289981/39567374-afdc9bb8-4e73-11e8-8b66-7b023b73e2f6.png)
 
 * We build a model of similarity to recommend what coupons a specific user will mostlikely get. For this purpose the analysis is based on the following features    'I_DATE','USER_ID_hash','COUPON_ID_hash','CAPSULE_TEXT_en','DISPPERIOD','VALIDPERIOD','PRICE','TIME','large_area_name_en','ken_name','small_area_name_en','SEX_ID', and 'AGE'. 
 
