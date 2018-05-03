@@ -1,12 +1,12 @@
 # Coupon-Purchase-Prediction
 Neural Networks, Bayes Autoregression, Visualization and Collaborative Filtering for Coupons Datasets
 
-## Data source and description
+# Data source and description
 In this repository we analyze data from kaggle competitions 
 
 https://www.kaggle.com/c/coupon-purchase-prediction
 
-## The analysis
+# The analysis
 
 * First we translate Japanese characteres using the provided dictionary translations.json  
 * As part of the data exploration, we analyzed the 'coupon_detail_train_en.csv' file to find the most active users in terms of using coupons. Then, we visalized the coupon preferences of the top three (here we show only two, however the three images are included in this repository)
@@ -43,9 +43,23 @@ We build the models using graphlab, here is a screen shot of the precision-recal
 ![line_recall_precision](https://user-images.githubusercontent.com/13289981/39565167-d8073cf4-4e6b-11e8-9be3-0876cf63476b.png)
 
 As you can observe in this results, the cosine and jaccard metrics perform better to predict the preferences of users.
+# forecasting time series
 
-## Codes
+For this part we focused in the time series that indicates the number of coupons used per day. We tested three codes:
+* An autoregressive model with 60 lagged values
+* A Bayesian autoregressive model
+* Neural Networks with 10 hidden layers and 4 nodes in each layer
+
+We oberved that our predictions were good for month period (30 days) with a total error of about 20%. The number of coupons used per day was bounded below 600.
+
+However, this error dramatically increased for a period of 80 days were we oberved a spike with more of 2400 coupons used.
+
+
+
+# Codes
 
 * trans (python) to translate Japanese words to English
 * similarity (ipynb) executes three similarity recommenders based on three similarity metrics (jaccard, pearson, cosine)
-* popular (python) finds the top 10 active users, then displays the coupon preferences of the top three. Finds the most popular coupons, and the cities (small_area_name) with more coupon activity. 
+* popular (python) finds the top 10 active users, then displays the coupon preferences of the top three. Finds the most popular coupons, and the cities (small_area_name) with more coupon activity. v
+* couponsflow (python) counts the number of coupons used per day and saves (together with year, month, day information) it into a csv file
+* flowpred (R) predicts the activity of coupons usinf three models (vector autoregression, bayes autoregression and multilayer perceptron)
