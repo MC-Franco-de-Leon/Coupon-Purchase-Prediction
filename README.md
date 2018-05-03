@@ -51,8 +51,10 @@ For this part we focused in the time series that indicates the number of coupons
 * Neural Networks with 10 hidden layers and 4 nodes in each layer
 
 We oberved that our predictions were good for month period (30 days) with a total error of about 20%. The number of coupons used per day was bounded below 600.
+![pred30days](https://user-images.githubusercontent.com/13289981/39568585-8be7b78e-4e77-11e8-96ed-1473704a1992.png)
 
 However, this error dramatically increased for a period of 80 days were we oberved a spike with more of 2400 coupons used.
+![pred80days](https://user-images.githubusercontent.com/13289981/39568591-8d967dcc-4e77-11e8-8d82-e42443947d0c.png)
 
 
 
