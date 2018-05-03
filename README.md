@@ -11,9 +11,14 @@ https://www.kaggle.com/c/coupon-purchase-prediction
 * First we translate Japanese characteres using the provided dictionary translations.json  
 * As part of the data exploration, we analyzed the 'coupon_detail_train_en.csv' file to find the most active users in terms of using coupons. Then, we visalized the coupon preferences of the top three (here we show only two, however the three images are included in this repository)
 
+**preferences of top users**
+
 ![couponsuser1](https://user-images.githubusercontent.com/13289981/39566644-26bafef8-4e71-11e8-8145-bee2f4ef1e55.png)
 ![couponsuser2](https://user-images.githubusercontent.com/13289981/39566648-285103d4-4e71-11e8-888a-cfe36a316beb.png)
 
+**most popular coupons**
+
+This graph was obtained only considering the top 100 most popular coupons (in terms of being purchased). The top 3 are in the order of thousands (5760,1511,1016), the number fourth has 863 ocurrences and the count drops to 122 for the coupon in the position 99, and 93 for the position 150. There are a lot of coupons that were used only once during this period of time (about 8 months), and we need to analize(count) those coupons that were not used at all.  
 
 * We build a model of similarity to recommend what coupons a specific user will mostlikely get. For this purpose the analysis is based on the following features    'I_DATE','USER_ID_hash','COUPON_ID_hash','CAPSULE_TEXT_en','DISPPERIOD','VALIDPERIOD','PRICE','TIME','large_area_name_en','ken_name','small_area_name_en','SEX_ID', and 'AGE'. 
 
