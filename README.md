@@ -46,11 +46,11 @@ As you can observe in this results, the cosine and jaccard metrics perform bette
 # forecasting time series
 
 For this part we focused in the time series that indicates the number of coupons used per day. We tested three codes:
-* An autoregressive model with 60 lagged values
-* A Bayesian autoregressive model
-* Neural Networks with 10 hidden layers and 4 nodes in each layer
+* An autoregressive model with 60 lagged values (red line in the graphs)
+* A Bayesian autoregressive model (dark green line in the graphs)
+* Neural Networks with 10 hidden layers and 4 nodes in each layer  (blue line in the graphs)
 
-We oberved that our predictions were good for month period (30 days) with a total error of about 20%. The number of coupons used per day was bounded below 600.
+We oberved that our predictions were good for month period (30 days) with a total error of about 20%. The number of coupons used per day was bounded below 600. The black lines represent the real/true values.
 ![pred30days](https://user-images.githubusercontent.com/13289981/39568585-8be7b78e-4e77-11e8-96ed-1473704a1992.png)
 
 However, this error dramatically increased for a period of 80 days were we oberved a spike with more of 2400 coupons used, which corresponds with June 4th 2012 (my time line is a little bit shifted in the graph).
