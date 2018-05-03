@@ -10,3 +10,9 @@ https://www.kaggle.com/c/coupon-purchase-prediction
 
 * First we translate Japanese characteres using the provided dictionary translations.json  
 *
+
+
+## Codes
+
+* trans (python) to translate Japanese words to English
+* similarity (ipynb) executes three similarity recommenders based on three similarity metrics (jaccard, pearson, cosine)
