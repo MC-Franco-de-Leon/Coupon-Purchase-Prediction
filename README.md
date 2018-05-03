@@ -9,6 +9,10 @@ https://www.kaggle.com/c/coupon-purchase-prediction
 ## The analysis
 
 * First we translate Japanese characteres using the provided dictionary translations.json  
+* As part of the data exploration, we analyzed the 'coupon_detail_train_en.csv' file to find the most active users in terms of using coupons. Then, we visalized the coupon preferences of the top three
+
+
+
 * We build a model of similarity to recommend what coupons a specific user will mostlikely get. For this purpose the analysis is based on the following features    'I_DATE','USER_ID_hash','COUPON_ID_hash','CAPSULE_TEXT_en','DISPPERIOD','VALIDPERIOD','PRICE','TIME','large_area_name_en','ken_name','small_area_name_en','SEX_ID', and 'AGE'. 
 
 The 'PRICE' feature is computed as 100*DISCOUNT_PRICE/PRICE_RATE 
@@ -29,3 +33,4 @@ As you can observe in this results, the cosine and jaccard metrics perform bette
 
 * trans (python) to translate Japanese words to English
 * similarity (ipynb) executes three similarity recommenders based on three similarity metrics (jaccard, pearson, cosine)
+* popular (python) finds the top 10 active users, then displays the coupon preferences of the top three. Finds the most popular coupons, and the cities (small_area_name) with more coupon activity. 
