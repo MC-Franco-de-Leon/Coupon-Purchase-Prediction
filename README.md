@@ -12,6 +12,7 @@ https://www.kaggle.com/c/coupon-purchase-prediction
 * We build a model of similarity to recommend what coupons a specific user will mostlikely get. For this purpose the analysis is based on the following features    'I_DATE','USER_ID_hash','COUPON_ID_hash','CAPSULE_TEXT_en','DISPPERIOD','VALIDPERIOD','PRICE','TIME','large_area_name_en','ken_name','small_area_name_en','SEX_ID', and 'AGE'. 
 
 The 'PRICE' feature is computed as 100*DISCOUNT_PRICE/PRICE_RATE 
+
 The 'TIME' feature is ('USABLE_DATE_MO'+USABLE_DATE_TUE+...+'USABLE_DATE_BEFORE_HOLIDAY')/9
 
 We order the new data frame according to the 'I_DATE' field and take 80% for trainig and the last 20% for testing the models. 
